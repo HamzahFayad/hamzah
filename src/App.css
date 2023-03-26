@@ -141,7 +141,7 @@ hr{
 
 img{
   display: inline-block;
-  min-width: 100%;
+  /*min-width: 100%;*/
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -309,13 +309,31 @@ li:hover{
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 }
+.Projects-wrap .Project-preview{
+    border-radius: 6px;
+    width: 100%;
+    height: 260px;
+    background-color: var(--dark_main);
+    background: linear-gradient(45deg, var(--dark_main), var(--light_main), var(--main));
+    background-size: 400% 400%;
+    animation: gradient 2s ease infinite;
+}
 .Projects-wrap .Project-item img{
   border-radius: 6px;
-  width: 350px;
-  max-width: 350px;
+  width: 100%;
+  /*max-width: 350px;*/
   cursor: pointer;
   height: 260px;
-  max-width: 260px;
+}
+@media screen and (max-width: 599px) {
+  .Projects-wrap .Project-item img, .Projects-wrap .Project-preview {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .Projects-wrap .Project-item img, .Projects-wrap .Project-preview {
+    height: 100%;
+  }
 }
 
 .koala{

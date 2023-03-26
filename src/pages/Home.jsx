@@ -1,7 +1,26 @@
 import "../App.css"
-import {projects} from "./home-data"
+import { private_projects } from "./home-data"
+import Filter from "../interactions/Filter";
+import { useEffect, useState } from "react";
 
 function Home() {
+
+  const [filter, setFilter] = useState("All");
+  const [loaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoaded(true);
+    }, 1000);
+  }, [filter]);
+  
+
+  const handleFilter = (item) => {
+    console.log(item);
+    setFilter(item);
+    setIsLoaded(false);
+  }
+
   return (
     <div className="Home">
       <div className="Grid-width-wide Center">
@@ -28,17 +47,28 @@ function Home() {
         </div>
         <div className="Projects top-space bottom-space">
           <h2 className="Subheadline Text-color">Projects 🖥️</h2>
+          <Filter onClick={handleFilter} />
           <div className="Projects-wrap top-space bottom-space">
-            {projects.map((data) => {
+            {!loaded && 
+              <>
+                <div className="Project-item Project-preview"></div>
+                <div className="Project-item Project-preview"></div>
+                <div className="Project-item Project-preview"></div>
+              </>
+
+            }
+            { loaded && 
+              private_projects.filter((f) => f.topic.includes(filter)).map((data) => {
               return (
                 <a key={data.id} target="_blank" rel="noreferrer" href={data.link}>
                 <div key={data.id} className="Project-item">
                   <img src={data.img} alt={"project-image-"+data.id} />
-                  <p>{data.title}</p>
+                    <p>{data.title} - {data.topic.join(", ") }</p>
                   </div>
                   </a>
               );
-            })}
+             }     
+            )}
           </div>
         </div>
       </section>

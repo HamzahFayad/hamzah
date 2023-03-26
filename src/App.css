@@ -320,7 +320,8 @@ li:hover{
 }
 .Projects-wrap .Project-item img{
   border-radius: 6px;
-  width: 100%;
+  width: 350px;
+  min-width: 380px;
   /*max-width: 350px;*/
   cursor: pointer;
   height: 260px;
@@ -328,11 +329,13 @@ li:hover{
 @media screen and (max-width: 599px) {
   .Projects-wrap .Project-item img, .Projects-wrap .Project-preview {
     width: 100%;
+    min-width: 100%;
   }
 }
 @media screen and (min-width: 1600px) {
   .Projects-wrap .Project-item img, .Projects-wrap .Project-preview {
     height: 100%;
+    width: 100%;
   }
 }
 

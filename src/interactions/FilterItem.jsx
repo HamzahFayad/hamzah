@@ -1,8 +1,9 @@
 import "../App.css"
 
-function FilterItem({filter, onClick}) {
+function FilterItem({ filter, onClick }) {
+    
     return (
-        <div className="FilterItem">
+        <div className={`FilterItem-${filter}`}>
             <p onClick={onClick}>{ filter }</p>
      </div>
   );

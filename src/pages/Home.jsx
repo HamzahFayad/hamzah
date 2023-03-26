@@ -11,8 +11,8 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoaded(true);
-    }, 1000);
-  }, [filter]);
+    }, 400);
+  }, [loaded]);
   
 
   const handleFilter = (item) => {

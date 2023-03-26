@@ -40,4 +40,11 @@ export const private_projects = [
     link: "https://hamzahfayad.github.io/studioghibli/",
     topic: ["All Projects", "HTML/SCSS/JS"],
   },
+  {
+    id: "7",
+    title: "Social Media Dashboard",
+    img: "https://hamzahfayad.github.io/portfolio/img/projects/social-media-dashboard.jpg",
+    link: "https://hamzahfayad.github.io/social-media-dashboard/",
+    topic: ["All Projects", "HTML/SCSS/JS"],
+  },
 ];

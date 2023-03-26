@@ -10,4 +10,6 @@ function FilterItem({ filter, onClick }) {
 }
 
 export default FilterItem;
+
+
 //className={`FilterItem FilterItem-${filter}`}

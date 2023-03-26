@@ -13,7 +13,7 @@ function Filter({onClick}) {
     return (
       <div className="Filter">
         {filter.map((item, i) => {
-          return <div key={item} onClick={() => {setActiveIndex(i)}} className={`${i === activeIndex ? "active-filter" : "inactive-filter"}`} ><FilterItem filter={item} onClick={() => { onClick(item)}} /></div>
+          return <div key={item} onClick={() => {setActiveIndex(i)}} className={`${i === activeIndex ? "active-filter" : ""}`} ><FilterItem filter={item} onClick={() => { onClick(item)}} /></div>
         })}
      </div>
   );

@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 function Home() {
 
-  const [filter, setFilter] = useState("All");
+  const [filter, setFilter] = useState("All Projects");
   const [loaded, setIsLoaded] = useState(false);
 
   useEffect(() => {

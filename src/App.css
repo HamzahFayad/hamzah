@@ -29,7 +29,7 @@
   --light: #fff;
   --dark: #1c1c1c;
   --main: #9cba8f;
-  --dark_main: #4d5d46;
+  --dark_main: #475640;
   --light_main: #c8eab9;
 }
 
@@ -37,7 +37,7 @@
   --light: #fff;
   --dark: #1c1c1c;
   --main: #529b9c;
-  --dark_main: #356263;
+  --dark_main: #294b4c;
   --light_main: #9fe2e3;
 }
 
@@ -45,7 +45,7 @@
   --light: #fff;
   --dark: #1c1c1c;
   --main: #d27575;
-  --dark_main: #7a4646;
+  --dark_main: #5f3737;
   --light_main: #f3b0b0;
 }
 
@@ -306,7 +306,7 @@ li:hover{
 }
 @media screen and (max-width: 1440px){
   .Projects-wrap{
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   }
 }
 .Projects-wrap .Project-preview{
@@ -337,6 +337,33 @@ li:hover{
     height: 100%;
     width: 100%;
   }
+}
+
+.Filter{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.Filter > div {
+  margin-right: 2rem;
+  margin-top: 1rem;
+  padding: .75rem;
+  background-color: var(--main);
+  border-radius: 6px;
+  cursor: pointer;
+}
+.Filter>div:hover{
+  background-color: var(--dark_main);
+}
+.Filter>div:hover > p {
+  color: var(--light);
+}
+div.active-filter{
+  background-color: var(--dark_main);
+}
+div.active-filter > p{
+  color: var(--light);
 }
 
 .koala{

@@ -2,6 +2,7 @@ import "../App.css"
 import { private_projects } from "./home-data"
 import Filter from "../interactions/Filter";
 import { useEffect, useState } from "react";
+import { Outlet } from "react-router-dom";
 
 function Home() {
 
@@ -72,6 +73,7 @@ function Home() {
           </div>
         </div>
       </section>
+      <Outlet />
     </div>
   );
 }

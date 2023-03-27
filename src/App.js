@@ -44,10 +44,11 @@ function App() {
           </ul>
         </header>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />}>
+            <Route path="contact" element={<Contact />} />
+          </Route>
           <Route path="about" element={<About />} />
           <Route path="creation" element={<Creation />} />
-          <Route path="contact" element={<Contact />} />
         </Routes>
       </Router>
       <Footer />

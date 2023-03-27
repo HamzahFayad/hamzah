@@ -177,8 +177,9 @@ html, body, .App {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  min-height: 100vh;
+  min-height: 100%;
   font-family: "Lora";
+  position: relative;
   transition: all 900ms ease-in-out;
 }
 
@@ -364,6 +365,7 @@ svg, .icon{
   color: var(--light);
 }
 div.active-filter{
+  pointer-events: none;
   background-color: var(--dark_main);
 }
 div.active-filter > p{
@@ -423,6 +425,20 @@ div.active-filter > p{
     animation: none;
     top: auto;
   }
+}
+
+/*CONTACT*/
+.Contact{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: block;
+  height: 60vh;
+  width: 30vw;
+  background: goldenrod;
+}
+.Contact div{
+  padding: 2rem;
 }
 
 

@@ -24,6 +24,15 @@ function App() {
     document.body.className = theme;
   }, [theme]);
 
+  /*useEffect(() => {
+    document.addEventListener("scroll", (e) => {
+      document.querySelector(".App-header").classList.remove("fixed");
+      if (window.scrollY >= 50) {
+        document.querySelector(".App-header").classList.add("fixed");
+      }
+    });
+  });*/
+
   return (
     <div className={`App App-theme-${theme}`}>
       <Router>
@@ -47,7 +56,9 @@ function App() {
           <Route path="/" element={<Home />}>
             <Route path="contact" element={<Contact />} />
           </Route>
-          <Route path="about" element={<About />} />
+          <Route path="about" element={<About />}>
+            <Route path="contact" element={<Contact />} />
+          </Route>
           <Route path="creation" element={<Creation />} />
         </Routes>
       </Router>

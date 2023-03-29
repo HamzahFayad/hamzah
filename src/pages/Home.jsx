@@ -12,8 +12,8 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoaded(true);
-    }, 400);
-  }, [loaded]);
+    }, 800);
+  }, [filter]);
   
 
   const handleFilter = (item) => {
@@ -32,10 +32,10 @@ function Home() {
         <img src="/images/lofi.jpeg" alt="img" />
         <div className="scroller">
           <span>
-          Web Development<br/>
-          Photography<br/>
-          Cinematic Film<br/>
-          Frontend - UX - Interaction
+            Web Development<br />
+            Frontend - UX - Interaction<br/>
+            Photography<br/>
+            Cinematic Film
           </span>
         </div>
       </div>

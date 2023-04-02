@@ -11,7 +11,7 @@ function Filter({onClick}) {
   }*/
 
     return (
-      <div className="Filter">
+      <div data-aos="fade-up" data-aos-duration="500" className="Filter">
         {filter.map((item, i) => {
           return <div key={item} onClick={() => {setActiveIndex(i)}} className={`${i === activeIndex ? "active-filter" : ""}`} ><FilterItem filter={item} onClick={() => { onClick(item)}} /></div>
         })}

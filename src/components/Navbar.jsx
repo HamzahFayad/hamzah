@@ -1,30 +1,36 @@
+import { useState, useEffect } from "react";
 import "../App.css"
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
-    const size = () => {
+    /*const size = () => {
     document.querySelector(".koala").style = "transform: scale(1.75);";
   };
 
   const resize = () => {
     document.querySelector(".koala").style = "transform: scale(1);";
-  };
+  };*/
+
+  const [scroll, setScroll] = useState(false);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 30) { 
+        setScroll(true);
+      }
+      else{
+        setScroll(false);
+      }
+   });
+ }, []);
 
   return (
     <>
-      <NavLink className="koala-Wrap" to="/">
-          <img
-          className="koala"
-          onMouseEnter={size}
-          onMouseLeave={resize}
-          src="/images/koala.png"
-          alt="koala"
-         />
-      </NavLink>
-          <li><NavLink className={(navData) => (navData.isActive ? "active-link" : 'none')} to="/">Work</NavLink></li>
+      <div id="Header-links" className={scroll ? "fixed-nav" : ""}>
+          <li><NavLink className={(navData) => (navData.isActive ? "active-link" : 'none')} to="/">Work 🖥️</NavLink></li>
           <li><NavLink className={(navData) => (navData.isActive ? "active-link" : 'none')} to="/about">About</NavLink></li>
           <li><NavLink className={(navData) => (navData.isActive ? "active-link" : 'none')} to="/creation">Creation</NavLink></li>
-          <li><NavLink className={(navData) => (navData.isActive ? "active-link" : 'none')} to="/contact">Contact</NavLink></li>
+        <li><NavLink className={(navData) => (navData.isActive ? "active-link" : 'none')} to="/contact">Contact</NavLink></li>
+        </div>
       </>
   );
 }

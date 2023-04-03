@@ -77,7 +77,7 @@ function Home() {
                 <a key={data.id} target="_blank" rel="noreferrer" href={data.link}>
                 <div key={data.id} className="Project-item">
                   <img src={data.img} alt={"project-image-"+data.id} />
-                    <p className="project-title">{data.title} - {data.topic.join("- ").split("All Projects-")}</p>
+                    <p className="project-title">{data.title} - {data.topic.join(" - ").split("All Projects-")}</p>
                   </div>
                   </a>
               );

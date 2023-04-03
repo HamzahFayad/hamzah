@@ -21,11 +21,15 @@ function Navbar() {
         setScroll(false);
       }
    });
- }, []);
+  }, []);
+  
+  const scrollTop = () => {
+    window.scrollTo(0, 0);
+  }
 
   return (
     <>
-      <div id="Header-links" className={scroll ? "fixed-nav" : ""}>
+      <div onClick={scrollTop} id="Header-links" className={scroll ? "fixed-nav" : ""}>
           <li><NavLink className={(navData) => (navData.isActive ? "active-link" : 'none')} to="/">Work 🖥️</NavLink></li>
           <li><NavLink className={(navData) => (navData.isActive ? "active-link" : 'none')} to="/about">About</NavLink></li>
           <li><NavLink className={(navData) => (navData.isActive ? "active-link" : 'none')} to="/creation">Creation</NavLink></li>

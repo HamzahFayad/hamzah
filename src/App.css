@@ -4,8 +4,7 @@
   }
 }*/
 
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 /*COLORS + FONTS*/
 :root{
   --regular: 400;
@@ -50,6 +49,10 @@
 }
 
 /*LAYOUT*/
+.Full-width{
+  margin: 0 auto;
+  padding: 3.5rem 0;
+}
 .Grid-width-wide{
   width: 80vw;
   margin: 0 auto;
@@ -179,7 +182,7 @@ html, body, .App {
   box-sizing: border-box;
   overflow-x: hidden;
   min-height: 100vh;
-  font-family: "Metropolis";
+  font-family: "Raleway";
   position: relative;
   transition: all 900ms ease-in-out;
 }

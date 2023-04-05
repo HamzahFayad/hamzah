@@ -1,4 +1,5 @@
 import "../App.css"
+import { about_data } from "./about-data"
 
 
 function About() {
@@ -10,9 +11,23 @@ function About() {
         <div className="Round">
         </div> 
       </div>
-      <div className="Grid-width-wide">
-        <h2>Lorem Ipsum</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quisquam placeat dignissimos pariatur rem impedit expedita nulla ipsum illo ducimus illum hic quasi recusandae tenetur, eius consequatur porro consectetur sit!</p>
+      <div className="Grid-width-wide Timeline">
+        <hr></hr>
+        <h2 className="Subheadline">my life so far</h2>
+          { 
+          about_data.map((data) => {
+            return (
+              <div id={"item-"+about_data.indexOf(data)} key={about_data.indexOf(data)} className="Timeline-item">
+                <h3>{data.date}</h3>
+                <div>
+                  <h4 style={{backgroundColor: data.color}}>{data.title}</h4>
+                  <p>{data.description}</p>
+                </div>
+              </div>
+            );
+            }     
+          )}
+        <p>work - education - certification</p>
       </div>
     </div>
   );

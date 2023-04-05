@@ -95,6 +95,7 @@
   background-color: var(--dark_main);
   color: var(--light_main);
 }
+
 h1,h2,h3, p{
   margin: 0;
   line-height: 1.5;
@@ -486,6 +487,34 @@ div.active-filter > p{
 
 /*ABOUT*/
 
+.Timeline-item{
+  display: grid;
+  grid-template-columns: minmax(150px, 35%) 1fr;
+  margin: 2rem 0;
+}
+@media screen and (max-width: 768px) {
+  .Timeline-item{
+    grid-template-columns: 1fr;
+  }
+}
+.Timeline-item p {
+  color: var(--dark);
+}
+.Timeline-item h3{
+  width: 100%;
+}
+.Timeline-item h4 {
+  margin-top: 0;
+  margin-bottom: .35rem;
+  color: var(--light);
+  padding: .35rem .3rem;
+}
+@media screen and (max-width: 768px) {
+  .Timeline-item h4 {
+    margin-top: 2rem;
+  }
+}
+
 /*CREATION*/
 .Creation .Full-width{
   transition: none !important;
@@ -635,7 +664,7 @@ form{
   margin: 1em 0em;
   display: grid;
   opacity: 0;
-  animation: fadeBottom 400ms ease-out 200ms forwards;
+  animation: fadeBottom 400ms ease-out 400ms forwards;
 }
 form > *{
   margin-bottom: 1em;

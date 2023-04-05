@@ -9,15 +9,15 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 function App() {
-  const [theme, setTheme] = useState("green");
+  const [theme, setTheme] = useState("blue");
 
   const handleTheme = () => {
-    if (theme === "green") {
-      setTheme("blue");
-    } else if (theme === "blue") {
+    if (theme === "blue") {
+      setTheme("green");
+    } else if (theme === "green") {
       setTheme("pink");
     } else {
-      setTheme("green");
+      setTheme("blue");
     }
   };
   useEffect(() => {

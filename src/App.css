@@ -166,14 +166,16 @@ img{
   margin: 0 auto;
   filter: grayscale(0.75);
   border: 4px solid var(--main);
+  transition: all 250ms ease-in-out;
 }
 .Round:hover{
   filter: grayscale(0.35);
   transform: rotate(-2.5deg);
 }
-*:not(.scroller>span){
+/**:not(.scroller>span):not(.swiper){
   transition: all 500ms cubic-bezier(0.65, 0, 0.35, 1);
-}
+}*/
+
 /*APP*/
 html, body, .App {
   text-align: left;
@@ -184,7 +186,6 @@ html, body, .App {
   min-height: 100vh;
   font-family: "Raleway";
   position: relative;
-  transition: all 900ms ease-in-out;
 }
 
 .App-logo {
@@ -222,9 +223,7 @@ html, body, .App {
   }
 }
 .fixed-nav{
-  position: fixed;
-  top: 2vh;
-  z-index: 9999;
+  top: 4vh !important;
 }
 
 #Header-links{
@@ -237,6 +236,15 @@ html, body, .App {
   margin: 0 auto;
   border-radius: 25px;
   padding: .5rem;
+   position: fixed;
+  top: 2vh;
+  z-index: 9999;
+  transition: all 300ms;
+}
+@media screen and (max-width: 599px) {
+  #Header-links{
+    top: 7vh;
+  }
 }
 li{
   list-style-type: none;
@@ -273,6 +281,12 @@ li:hover{
   font-size: 0.95rem;
   color: var(--dark_main);
 }
+@media screen and (max-width: 599px) {
+  .Nav-name{
+      position: relative;
+      margin-top: 8vh;
+  }
+}
 .Dark-light{
   position: absolute;
   top: 10px;
@@ -282,6 +296,18 @@ li:hover{
   color: var(--dark_main);
   cursor: pointer;
 }
+@media screen and (max-width: 599px) {
+  .Dark-light span{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+  }
+  .Dark-light svg{
+      margin: 0 !important;
+  }
+}
+
 svg, .icon{
   max-width: 30px;
   width: 30px;
@@ -458,6 +484,18 @@ div.active-filter > p{
   }
 }
 
+/*ABOUT*/
+
+/*CREATION*/
+.Creation .Full-width{
+  transition: none !important;
+} 
+
+.swiper-button-prev, .swiper-button-next{
+  color: #fff !important;
+  transform: scale(.75);
+}
+
 /*CONTACT*/
 .Contact{
   position: fixed;
@@ -478,6 +516,9 @@ div.active-filter > p{
   opacity: 0;
   animation: fadeBottom 400ms ease-out 0ms forwards;
 }
+.Contact.invisible{
+  animation: fadeOut 300ms ease-in-out;
+}
 @media screen and (max-width: 768px){
   .Contact{
     right: 0;
@@ -485,6 +526,7 @@ div.active-filter > p{
     width: 100vw;
     bottom: 0;
     border-radius: 0px;
+    z-index: 19999999;
   }
 }
 @media screen and (min-width: 768px) {
@@ -542,7 +584,7 @@ div.active-filter > p{
 }
 
 .New-Answers{
-  height: 25vh;
+  height: 15vh;
 }
 .new-answer-bot{
   opacity: 0;
@@ -588,6 +630,17 @@ div.active-filter > p{
   animation: fade 400ms ease-out 2400ms forwards;
 }
 
+form{
+  padding: 1em;
+  margin: 1em 0em;
+  display: grid;
+  opacity: 0;
+  animation: fadeBottom 400ms ease-out 200ms forwards;
+}
+form > *{
+  margin-bottom: 1em;
+} 
+
 /*ANIMATIONS*/
 
 @keyframes fade {
@@ -622,6 +675,18 @@ div.active-filter > p{
   100% {
     opacity: 1;
     transform: translateY(0%);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20%);
   }
 }
 

@@ -7,9 +7,9 @@ function Contact() {
   
   let navigate = useNavigate(); 
   const handleClose = () => {
-    console.log('closed');
     let path = `/`; 
-    navigate(path);
+    document.querySelector(".Contact").classList.add("invisible");
+    setTimeout(() => { navigate(path) }, 600);
   }
 
   const [click, setClick] = useState(false);
@@ -19,29 +19,29 @@ function Contact() {
   /*const [question3, setQuestion3] = useState("false");
   const [question4, setQuestion4] = useState("false");*/
 
-  const handleQuestion1 = () => {
+  const generalHandleQuestion = () => {
     setClick(true);
-    setQuestion1(true);
     let answerBots = document.querySelectorAll(".answer-bot");
     answerBots.forEach((bot) => {
       bot.classList.add("hide");
     })
-   /* setTimeout(() => {
-      answerBots.forEach((bot) => {
-        bot.classList.remove("hide");
-          bot.classList.add("show");
-    })
-    }, 500)*/
+  }
+
+  const handleQuestion1 = () => {
+    setQuestion1(true);
+    generalHandleQuestion();
   }
 
   const handleQuestion2 = () => {
-    setClick(true);
     setQuestion2(true);
-    let answerBots = document.querySelectorAll(".answer-bot");
-    answerBots.forEach((bot) => {
-      bot.classList.add("hide");
-    })
+    generalHandleQuestion();
   }
+
+
+  const handleSearchSubmit = event => {
+    console.log("HI");
+    event.preventDefault();
+  };
 
   return (
     <div className="Contact">
@@ -51,11 +51,11 @@ function Contact() {
           <span onClick={handleClose}>close</span>
         </div>
         <div className="Contact-inner">
-        <div className="Contact-Content Greeting">
+         <div className="Contact-Content Greeting">
           <span className="span-bot greeting-bot">Hey!👋🏼 </span>
           <span className="span-bot greeting-bot">Hope you're doing great.</span>
           <span className="span-bot greeting-bot">Choose any question you'd like to ask. 😊😊😊</span>
-          </div>
+         </div>
           {click &&
             <div className="Contact-Content New-Answers">
               {question1 && <span className="span-bot new-answer-bot">Hey, thank you for visiting my website.</span>}
@@ -68,6 +68,12 @@ function Contact() {
           <span className="span-bot answer-bot quest3">See your Social Media</span>
           <span className="span-bot answer-bot quest4">I'd like to hire you</span>
           </div>
+          {click && (question1 || question2) &&
+            <form onSubmit={handleSearchSubmit}>
+              <input placeholder="name" />
+              <button type="submit">Submit </button>
+            </form>
+          }
         </div>
       </div>
     </div>

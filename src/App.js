@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Creation from "./pages/Creation";
 import Contact from "./pages/Contact";
+import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
@@ -60,6 +61,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
           </Route>
           <Route path="creation" element={<Creation />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
       <Footer />

@@ -13,7 +13,8 @@ function About() {
       </div>
       <div className="Grid-width-wide Timeline">
         <hr></hr>
-        <h2 className="Subheadline">my life so far</h2>
+        <h2 className="Subheadline">my life so far 👀</h2><br/>
+        <p><span className="legend" style={{backgroundColor: '#d27575'}}></span>work<br/><span className="legend" style={{backgroundColor: '#9cba8f'}}></span>certification / courses<br/><span className="legend" style={{backgroundColor: '#529b9c'}}></span>education</p>
           { 
           about_data.map((data) => {
             return (
@@ -27,7 +28,6 @@ function About() {
             );
             }     
           )}
-        <p>work - education - certification</p>
       </div>
     </div>
   );

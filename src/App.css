@@ -28,7 +28,7 @@
   --light: #fff;
   --dark: #1c1c1c;
   --main: #cdd3c2;
-  --dark_main: #61655b;
+  --dark_main: #787e71;
   --light_main: #dfe5d3;
 }
 
@@ -233,7 +233,7 @@ html, body, .App {
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: .5rem;
   margin: 0 auto;
   border-radius: 25px;
   padding: .5rem;
@@ -245,6 +245,7 @@ html, body, .App {
 @media screen and (max-width: 599px) {
   #Header-links{
     top: 7vh;
+    gap: .75rem;
   }
 }
 li{
@@ -466,7 +467,7 @@ div.active-filter > p{
 .scroller>span {
   position: absolute;
   top: 0;
-  animation: slide 6s ease-in-out .5s infinite;
+  animation: slide 7s ease-in-out .5s infinite;
   font-weight: bold;
   font-size: 4rem;
   color: var(--light_main);
@@ -515,6 +516,13 @@ div.active-filter > p{
   }
 }
 
+.Timeline .legend{
+  width: 30px;
+  height: 10px;
+  display: inline-block;
+  margin-right: .5rem;
+}
+
 /*CREATION*/
 .Creation .Full-width{
   transition: none !important;
@@ -523,6 +531,10 @@ div.active-filter > p{
 .swiper-button-prev, .swiper-button-next{
   color: #fff !important;
   transform: scale(.75);
+}
+
+.HoverCard{
+  display: none !important;
 }
 
 /*CONTACT*/

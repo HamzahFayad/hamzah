@@ -47,4 +47,10 @@ export const private_projects = [
     link: "https://hamzahfayad.github.io/social-media-dashboard/",
     topic: ["All Projects", "HTML/SCSS/JS"],
   },
+  {
+    id: "8",
+    title: "glow communication",
+    img: "https://www.pixelstalk.net/wp-content/uploads/images6/Lofi-Wallpapers-HD-Free-download.jpg",
+    topic: ["All Projects", "Wordpress"],
+  },
 ];

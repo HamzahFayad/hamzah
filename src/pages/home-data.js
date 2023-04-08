@@ -15,30 +15,30 @@ export const private_projects = [
   },
   {
     id: "3",
-    title: "Inpacs Messe",
-    img: "https://www.pixelstalk.net/wp-content/uploads/images6/Lofi-Wallpapers-HD-Free-download.jpg",
-    topic: ["All Projects", "Wordpress"],
-  },
-  {
-    id: "4",
     title: "Weather App",
     img: "https://hamzahfayad.github.io/portfolio/img/projects/weather-app.png",
     link: "https://hamzahfayad.github.io/weather-app/",
     topic: ["All Projects", "Vue.js", "API"],
   },
   {
-    id: "5",
+    id: "4",
     title: "Todo",
     img: "https://hamzahfayad.github.io/portfolio/img/projects/todo.png",
     link: "https://hamzahfayad.github.io/todo/",
     topic: ["All Projects", "Vue.js", "API"],
   },
   {
-    id: "6",
+    id: "5",
     title: "Studio Ghibli",
     img: "https://hamzahfayad.github.io/portfolio/img/projects/studioghibli.JPG",
     link: "https://hamzahfayad.github.io/studioghibli/",
     topic: ["All Projects", "HTML/SCSS/JS"],
+  },
+  {
+    id: "6",
+    title: "Inpacs Messe",
+    img: "/images/inpacs.png",
+    topic: ["All Projects", "Wordpress"],
   },
   {
     id: "7",
@@ -50,7 +50,8 @@ export const private_projects = [
   {
     id: "8",
     title: "glow communication",
-    img: "https://www.pixelstalk.net/wp-content/uploads/images6/Lofi-Wallpapers-HD-Free-download.jpg",
+    img: "/images/glow.png",
+    link: "http://dev-glow.glow-berlin.net/",
     topic: ["All Projects", "Wordpress"],
   },
 ];

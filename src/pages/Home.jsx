@@ -11,6 +11,11 @@ function Home() {
 
   const [filter, setFilter] = useState("All Projects");
   const [loaded, setIsLoaded] = useState(false);
+  const [next, setNext] = useState(6);
+  
+  const handleMoreProjects = () => {
+    setNext(next + 3);
+  };
   //const [count, setCount] = useState(0);
 
   let projectsFilter = private_projects.filter((f) => f.topic.includes(filter));
@@ -72,22 +77,24 @@ function Home() {
 
             }
             { loaded && 
-              projectsFilter.map((data) => {
+              projectsFilter?.slice(0, next)?.map((data) => {
               return (
                 <a key={data.id} target="_blank" rel="noreferrer" href={data.link}>
                 <div key={data.id} className="Project-item">
                   <img src={data.img} alt={"project-image-"+data.id} />
-                    <p className="project-title">{data.title} - {data.topic.join(" - ").split("All Projects -")}</p>
+                    <p className="project-title">{data.title} {/*- {data.topic.join(" - ").split("All Projects -")}*/}</p>
                   </div>
                   </a>
               );
              }     
-              )}
-            
+              )}          
             { num < 1 &&
               <p>new projects coming soon ;)</p>
             }
           </div>
+          {next < projectsFilter?.length && (
+          <button onClick={handleMoreProjects}>Load more</button>
+          )}
         </div>
       </section>
       <Outlet />

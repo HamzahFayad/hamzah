@@ -51,6 +51,13 @@ function Creation() {
       <div className="Slide Grid-width-wide">
         <hr></hr>
         <h2 className="Subheadline Text-color">Cinematic Film</h2>
+        <div className="mockup">
+          {/*<img className="phone-mockup" src="/images/phone-mockup.png" alt="phone mockup" />*/}
+          <div className="mockup-scroll">
+            <img className="mockup-img" src="/images/wallp.jpg" alt="wallp" />
+            <img className="mockup-img" src="/images/bg-img.jpg" alt="wallp" />
+          </div>
+        </div>
       </div>
     </div>
 

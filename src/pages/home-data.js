@@ -54,4 +54,11 @@ export const private_projects = [
     link: "http://dev-glow.glow-berlin.net/",
     topic: ["All Projects", "Wordpress"],
   },
+  {
+    id: "9",
+    title: "Periodic Table Infosite",
+    img: "/images/bg-img.jpg",
+    link: "#",
+    topic: ["All Projects", "React", "API"],
+  },
 ];

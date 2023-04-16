@@ -100,6 +100,22 @@ h1,h2,h3, p{
   margin: 0;
   line-height: 1.5;
 }
+button {
+  border: none;
+  padding: .75rem 1rem;
+  margin: 0 auto;
+  display: block;
+  background-color: var(--dark_main);
+  font-weight: var(--bold);
+  color: var(--light);
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all 300ms ease-in-out;
+}
+button:hover{
+  background-color: var(--light_main);
+  color: var(--dark_main);
+}
 .Headline {
   font-size: 4rem;
   color: var(--dark_main);
@@ -504,6 +520,7 @@ div.active-filter > p{
   }
 }
 
+
 /*ABOUT*/
 
 .Timeline-item{
@@ -554,9 +571,6 @@ div.active-filter > p{
 .swiper-slide{
   overflow: hidden;
 }
-.swiper-slide:hover img{
-  transform: scale(1.1);
-}
 .swiper-button-prev, .swiper-button-next{
   transform: scale(.75);
   top: 0;
@@ -588,6 +602,34 @@ div.active-filter > p{
   position: absolute;
   content: "\2192";
   font-size: 45px;
+}
+
+.mockup{
+  position: relative;
+}
+.mockup .phone-mockup{
+  max-width: 250px;
+  display: block;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+}
+.mockup .mockup-scroll{
+  width: 230px;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -9999;
+  height: 480px;
+  margin: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.mockup .mockup-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+    border-radius: 15px;
 }
 
 /*CONTACT*/

@@ -9,11 +9,11 @@ export const visuals = [
   },
   {
     id: 3,
-    img: "https://hamzahfayad.github.io/photos-collection/assets/img03.jpg",
+    img: "https://hamzahfayad.github.io/photos-collection/assets/img06.jpg",
   },
   {
     id: 4,
-    img: "https://hamzahfayad.github.io/photos-collection/assets/img04.jpg",
+    img: "https://hamzahfayad.github.io/photos-collection/assets/img07.jpg",
   },
   {
     id: 5,
@@ -21,11 +21,11 @@ export const visuals = [
   },
   {
     id: 6,
-    img: "https://hamzahfayad.github.io/photos-collection/assets/img06.jpg",
+    img: "https://hamzahfayad.github.io/photos-collection/assets/img03.jpg",
   },
   {
     id: 7,
-    img: "https://hamzahfayad.github.io/photos-collection/assets/img07.jpg",
+    img: "https://hamzahfayad.github.io/photos-collection/assets/img04.jpg",
   },
   {
     id: 8,

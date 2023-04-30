@@ -291,6 +291,7 @@ a{
   text-decoration: none;
   color: var(--dark);
 }
+
 ul a{
   padding: 0.25em 0.75em;
   letter-spacing: -1px;

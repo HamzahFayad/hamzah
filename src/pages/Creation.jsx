@@ -46,19 +46,23 @@ function Creation() {
       </div>
       <div className="Slide Grid-width-wide">
         <hr></hr>
-        <h2 className="Subheadline Text-color">Book II - Busy Market</h2>
+        <h2 className="Subheadline Text-color">More content coming soon</h2>
       </div>
-      <div className="Slide Grid-width-wide">
+      {/*<div className="Slide Grid-width-wide">
+        <hr></hr>
+        <h2 className="Subheadline Text-color">Book II - Busy Market</h2>
+      </div>*/}
+      {/*<img className="phone-mockup" src="/images/phone-mockup.png" alt="phone mockup" />*/}
+      {/*<div className="Slide Grid-width-wide">
         <hr></hr>
         <h2 className="Subheadline Text-color">Cinematic Film</h2>
         <div className="mockup">
-          {/*<img className="phone-mockup" src="/images/phone-mockup.png" alt="phone mockup" />*/}
           <div className="mockup-scroll">
             <img className="mockup-img" src="/images/wallp.jpg" alt="wallp" />
             <img className="mockup-img" src="/images/bg-img.jpg" alt="wallp" />
           </div>
         </div>
-      </div>
+    </div>*/}
     </div>
 
   );

@@ -1,6 +1,7 @@
 import "../App.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
+import { InstagramEmbed } from 'react-social-media-embed';
 
 import 'swiper/css';
 import { visuals } from "./creation-data"
@@ -44,6 +45,20 @@ function Creation() {
           }
     </Swiper>
       </div>
+      <div className="Slide Grid-width-wide">
+        <hr></hr>
+        <h2 className="Subheadline Text-color">Book II - Busy Market</h2>
+      </div>
+      <div className="Slide Grid-width-wide">
+        <hr></hr>
+        <h2 className="Subheadline Text-color">Visual Reels</h2>
+        <div className="visual-reels">
+          <InstagramEmbed url="https://www.instagram.com/p/Crn5ljFr4r1/" width={328} style={{marginTop: "2rem"}} />
+          <InstagramEmbed url="https://www.instagram.com/reel/Cq8L9E5xw7I/" width={328} style={{marginTop: "2rem"}} />
+          <InstagramEmbed url="https://www.instagram.com/reel/CpTIOt5jQ7M/" width={328} style={{marginTop: "2rem"}} />
+        </div>
+      </div> 
+      
       <div className="Slide Grid-width-wide">
         <hr></hr>
         <h2 className="Subheadline Text-color">More content coming soon</h2>

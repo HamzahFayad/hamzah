@@ -633,6 +633,20 @@ div.active-filter > p{
     border-radius: 15px;
 }
 
+@media screen and (max-width: 1024px) {
+.visual-reels {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+}
+}
+@media screen and (min-width: 1024px) {
+.visual-reels{     
+  display: flex;
+ justify-content: space-between;
+}
+}
 /*CONTACT*/
 .Contact{
   position: fixed;

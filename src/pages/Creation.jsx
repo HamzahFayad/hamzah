@@ -17,7 +17,7 @@ function Creation() {
         </div>
       <div className="Slide Grid-width-wide">
         <hr></hr>
-        <h2 className="Subheadline Text-color">Book I - Cinematic Streets</h2>
+        <h2 className="Subheadline Text-color">Book I - Street Views</h2>
         <Swiper
           spaceBetween={5}
           slidesPerView={3}

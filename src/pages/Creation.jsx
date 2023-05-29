@@ -5,6 +5,7 @@ import { InstagramEmbed } from 'react-social-media-embed';
 
 import 'swiper/css';
 import { visuals } from "./creation-data"
+import { visuals2 } from "./creation-data"
 
 
 function Creation() {
@@ -31,9 +32,9 @@ function Creation() {
             900: {
               slidesPerView: 2
             },
-            1024: {
+            /*1024: {
               slidesPerView: 3
-            },
+            },*/
           }}
         >
           {
@@ -48,6 +49,29 @@ function Creation() {
       <div className="Slide Grid-width-wide">
         <hr></hr>
         <h2 className="Subheadline Text-color">Book II - Busy Market</h2>
+           <Swiper
+          spaceBetween={5}
+          slidesPerView={3}
+          modules={[Navigation, Pagination, Scrollbar]}
+          navigation={true}
+          pagination={{ clickable: true }}
+          breakpoints={{
+            320: {
+              slidesPerView: 1
+            },
+            900: {
+              slidesPerView: 2
+            },
+          }}
+        >
+          {
+            visuals2.map((visual) => {
+              return(
+                <SwiperSlide key={visual.id}><img src={visual.img} alt={visual.img} /></SwiperSlide>
+              )
+            })
+          }
+    </Swiper>
       </div>
       <div className="Slide Grid-width-wide">
         <hr></hr>

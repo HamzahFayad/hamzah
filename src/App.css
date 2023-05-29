@@ -200,7 +200,8 @@ img{
   filter: grayscale(0.2);
 }
 .Round2{
-    background-image: url("/public/images/lofi.jpeg");
+    filter: grayscale(0.35);
+    background-image: url("/public/images/3d-background.jpg");
 }
 /**:not(.scroller>span):not(.swiper){
   transition: all 500ms cubic-bezier(0.65, 0, 0.35, 1);

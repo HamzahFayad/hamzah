@@ -21,7 +21,7 @@ function About() {
               <div id={"item-"+about_data.indexOf(data)} key={about_data.indexOf(data)} className="Timeline-item">
                 <h3>{data.date}</h3>
                 <div>
-                  <h4 style={{backgroundColor: data.color}}>{data.title}</h4>
+                  <h4 style={{background: data.color}}>{data.title}</h4>
                   <p>{data.description}</p>
                 </div>
               </div>

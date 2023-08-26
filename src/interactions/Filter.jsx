@@ -3,7 +3,7 @@ import "../App.css"
 import FilterItem from "./FilterItem";
 
 function Filter({onClick}) {
-  let filter = ["All Projects", "HTML/SCSS/JS", "React", "Vue.js", "API", "JSON", "Wordpress", "Design"];
+  let filter = ["All Projects", "HTML/SCSS/JS", "React", "p5.js", "Vue.js", "API", "JSON", "Wordpress", "Design"];
   //const [filtername, setFiltername] = useState(filter);
   const [activeIndex, setActiveIndex] = useState(0);
   /*const handleFilter = (item) => {

@@ -4,21 +4,41 @@ import { Navigation, Pagination, Scrollbar } from 'swiper';
 import { InstagramEmbed } from 'react-social-media-embed';
 
 import 'swiper/css';
-import { visuals } from "./creation-data"
-import { visuals2 } from "./creation-data"
+import { visuals01 } from "./creation-data"
+import { visuals02 } from "./creation-data"
+import { visuals00 } from "./creation-data"
 
+function resizeImg(src) {
+  console.log("resized", src);
+  console.log(document.querySelector("#imgSrc").style.zIndex);
+  document.querySelector("#imgSrc").src = src;
+  document.querySelector("#imgSrc").style.zIndex = document.querySelector("#imgSrc").style.zIndex === "1"  ? "-1" : "1";
+}
 
 function Creation() {
   return (
     <div className="App">
-        <div className="Grid-width-wide Center">
+      <div className="Grid-width-wide Center">
         <h1 className="Headline">Visual Stories. 📷 </h1>
          <div className="Round Round2">
         </div> 
-        </div>
+      </div>
+      
+      <h2 style={{textAlign: "center"}}>new visuals ...</h2>
+      <div className="img-vertical">
+      {
+            visuals00.map((visual) => {
+              return (
+                <img onClick={() => { resizeImg(visual.img) }} key={visual.id} className="img-vertical-item" src={visual.img} alt={visual.img} />
+              )
+            })
+        }
+        <img onClick={() => { resizeImg() }} src="https://w3bits.com/wp-content/uploads/css-image-hover-zoom.jpg" id="imgSrc" alt="placehlder"/>
+      </div>
+
       <div className="Slide Grid-width-wide">
         <hr></hr>
-        <h2 className="Subheadline Text-color">Book I - Street Views</h2>
+        <h2 className="Subheadline Text-color">Book I - Busy Market</h2>
         <Swiper
           spaceBetween={5}
           slidesPerView={3}
@@ -38,7 +58,7 @@ function Creation() {
           }}
         >
           {
-            visuals.map((visual) => {
+            visuals01.map((visual) => {
               return(
                 <SwiperSlide key={visual.id}><img src={visual.img} alt={visual.img} /></SwiperSlide>
               )
@@ -48,7 +68,7 @@ function Creation() {
       </div>
       <div className="Slide Grid-width-wide">
         <hr></hr>
-        <h2 className="Subheadline Text-color">Book II - Busy Market</h2>
+        <h2 className="Subheadline Text-color">Book II - Street Views</h2>
            <Swiper
           spaceBetween={5}
           slidesPerView={3}
@@ -65,7 +85,7 @@ function Creation() {
           }}
         >
           {
-            visuals2.map((visual) => {
+            visuals02.map((visual) => {
               return(
                 <SwiperSlide key={visual.id}><img src={visual.img} alt={visual.img} /></SwiperSlide>
               )

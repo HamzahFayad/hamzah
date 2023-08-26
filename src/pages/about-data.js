@@ -8,20 +8,22 @@ export const about_data = [
   },
   {
     date: "summer 2025",
-    color: "#529b9c",
+    color:
+      "linear-gradient(to right, rgb(82, 155, 156) 50%, rgb(156, 186, 143) 100%)",
     title: "Summer School - Seoul (South Korea) Hanyang University",
     description: "➢ 4 weeks program /// ambassador scholarship",
   },
   {
     date: "XX/2024 - today",
     color: "#d27575",
-    title: "freelance // selling photographs online - ArtHeroes",
+    title:
+      "freelance // selling photographs online - ArtHeroes // video editor",
     description: "➢",
   },
   {
     date: "09/2024 - xx",
     color: "#d27575",
-    title: "Web Developer (React) - XXX",
+    title: "Web Developer (React) - XXX Company",
     description: "➢",
   },
   {
@@ -29,7 +31,7 @@ export const about_data = [
     color: "#529b9c",
     title: "Digital Media M.Sc. - Technische Hochschule Brandenburg",
     description:
-      "➢ Master of Science - 3 focus areas: media production, informatics, media studies /// web/app development, interactive visual worlds, visual stories (film, photography, animation)",
+      "➢ Master of Science - 3 focus areas: informatics, media production, media studies /// web/app development, interactive visual worlds, visual stories (film, photography, animation)",
   },
   {
     date: "2022 - ",
@@ -39,9 +41,9 @@ export const about_data = [
     description: "➢",
   },
   {
-    date: "09/2021 - 09/2023",
+    date: "09/2021 - XX/2023",
     color: "#d27575",
-    title: "Web Developer - glow communication GmbH",
+    title: "Web Developer - glow communication GmbH (Berlin)",
     description: "➢",
   },
   {
@@ -54,7 +56,7 @@ export const about_data = [
   {
     date: "09/2020 - 12/2020",
     color: "#d27575",
-    title: "Internship Web Developer - Deutsche Presse-Agentur",
+    title: "Internship Web Developer - Deutsche Presse-Agentur (Berlin)",
     description:
       "➢ developed HTML/JS templates for Wordpress addons: imagewall, quiz, timeline, referendum, covid barchart race with d3.js",
   },

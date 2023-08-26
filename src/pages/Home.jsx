@@ -58,11 +58,11 @@ function Home() {
         </div>
       </div>
       <hr></hr>
-
+      
       <section className="Grid-width-wide Main-content" id="work">
         <div className="Center bottom-space">
           <p>I Create. For The Web. And With My Camera.</p>
-          <p>I Develop. I Code. I Photograph. I Film.</p>
+          <p>I Develop. I Build. I Photograph. I Film.</p>
         </div>
         <div className="Projects top-space bottom-space">
           <h2 data-aos="zoom-in" className="Subheadline Text-color">Projects 🖥️</h2>

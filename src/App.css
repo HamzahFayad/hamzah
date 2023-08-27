@@ -894,7 +894,8 @@ footer{
   height: 65vh; 
   margin: 3% auto; 
   margin-top: 1%;
-  width: 100vh;
+  /*width: 100vh;*/
+  width: 60%;
   border-radius: 50px;
   border: 14px solid #212121;
   background-color: #090909;
@@ -912,14 +913,15 @@ footer{
 }
 
 @media screen and (max-width: 900px) {
-  .img-vertical {
+  .img-vertical,
+    section#creation {
       display: none;
     }
 }
 .img-vertical .img-vertical-item{
   height: 20%;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.85;
   position: relative;
   cursor: pointer;
 }

@@ -6,6 +6,7 @@ import { Outlet } from "react-router-dom";
 // importing aos
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { visuals00 } from "./creation-data"
 
 function Home() {
 
@@ -38,6 +39,13 @@ function Home() {
   useEffect(() => {
     AOS.init();
   }, []);
+
+  function resizeImg(src) {
+  console.log("resized", src);
+  console.log(document.querySelector("#imgSrc").style.zIndex);
+  document.querySelector("#imgSrc").src = src;
+  document.querySelector("#imgSrc").style.zIndex = document.querySelector("#imgSrc").style.zIndex === "1"  ? "-1" : "1";
+}
 
 
   return (
@@ -95,6 +103,20 @@ function Home() {
           {next < projectsFilter?.length && (
           <button onClick={handleMoreProjects}>Load more</button>
           )}
+        </div>
+      </section>
+
+      <section className="Grid-width-wide" id="creation">
+        <h2 className="Text-color" style={{textAlign: "center"}}>visuals stories - check out more <a style={{textDecoration: "underline"}} href="creation">here</a></h2>
+        <div className="img-vertical">
+          {
+            visuals00.map((visual) => {
+              return (
+                <img onClick={() => { resizeImg(visual.img) }} key={visual.id} className="img-vertical-item" src={visual.img} alt={visual.img} />
+              )
+            })
+          } 
+          <img onClick={() => { resizeImg() }} src="https://w3bits.com/wp-content/uploads/css-image-hover-zoom.jpg" id="imgSrc" alt="placehlder"/>
         </div>
       </section>
       <Outlet />

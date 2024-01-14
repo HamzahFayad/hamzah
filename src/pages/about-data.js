@@ -26,25 +26,27 @@ export const about_data = [
     title: "Web Developer (React) - XXX Company",
     description: "➢",
   },
+  // {
+  //   date: "10/2023 - 2025 xx",
+  //   color: "#529b9c",
+  //   title: "Digital Media M.Sc. - Technische Hochschule Brandenburg",
+  //   description:
+  //     "➢ Master of Science - 3 focus areas: informatics, media production, media studies /// web/app development, interactive visual worlds, visual stories (film, photography, animation)",
+  // },
   {
-    date: "10/2023 - 2025 xx",
-    color: "#529b9c",
-    title: "Digital Media M.Sc. - Technische Hochschule Brandenburg",
-    description:
-      "➢ Master of Science - 3 focus areas: informatics, media production, media studies /// web/app development, interactive visual worlds, visual stories (film, photography, animation)",
-  },
-  {
-    date: "2022 - ",
+    date: "2022 - 2025",
     color: "#529b9c",
     title:
       "Medieninformatik M.Sc. / Media Informatics - Berliner Hochschule für Technik",
-    description: "➢",
+    description:
+      "➢ Web & Software Development, Multimedia, Virtual Reality and more",
   },
   {
-    date: "09/2021 - XX/2023",
+    date: "09/2021 - XX/2024",
     color: "#d27575",
     title: "Web Developer - glow communication GmbH (Berlin)",
-    description: "➢",
+    description:
+      "➢ built interactive websites for various clients, websites maintenance, bug fixings and more / built a clients feedback tool incl. analytics for internal purposes",
   },
   {
     date: "03/2021 - 08/2021",

@@ -1,7 +1,7 @@
 import "../App.css"
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar } from 'swiper';
-import { InstagramEmbed } from 'react-social-media-embed';
+//import { InstagramEmbed } from 'react-social-media-embed';
 
 import 'swiper/css';
 import { visuals01 } from "./creation-data"
@@ -72,7 +72,7 @@ function Creation() {
           }
     </Swiper>
       </div>
-      <div className="Slide Grid-width-wide">
+      {/*<div className="Slide Grid-width-wide">
         <hr></hr>
         <h2 className="Subheadline Text-color">Visual Reels</h2>
         <div className="visual-reels">
@@ -80,7 +80,7 @@ function Creation() {
           <InstagramEmbed url="https://www.instagram.com/reel/Cq8L9E5xw7I/" width={328} style={{marginTop: "2rem"}} />
           <InstagramEmbed url="https://www.instagram.com/reel/CpTIOt5jQ7M/" width={328} style={{marginTop: "2rem"}} />
         </div>
-      </div> 
+        </div> */}
       
       <div className="Slide Grid-width-wide">
         <hr></hr>

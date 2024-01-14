@@ -447,11 +447,13 @@ svg, .icon{
 .Filter > div {
   margin-right: 1rem;
   margin-top: 1rem;
-  padding: .75rem;
   border: 2px solid var(--dark_main);
   border-radius: 2px;
   cursor: pointer;
   transition: all 250ms ease-in-out;
+}
+.Filter > div > p{
+    padding: .75rem;
 }
 .Filter>div:hover{
   background-color: var(--dark_main);

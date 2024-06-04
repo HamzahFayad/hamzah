@@ -1,20 +1,20 @@
-import "../App.css"
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar } from 'swiper';
+import "../App.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar } from "swiper";
 //import { InstagramEmbed } from 'react-social-media-embed';
 
-import 'swiper/css';
-import { visuals01 } from "./creation-data"
-import { visuals02 } from "./creation-data"
+import "swiper/css";
+import { visuals01 } from "./creation-data";
+import { visuals02 } from "./creation-data";
 
 function Creation() {
   return (
     <div className="App">
       <div className="Grid-width-wide Center">
         <h1 className="Headline">Visual Stories. 📷 </h1>
-        <div className="Round Round2"></div> 
+        <div className="Round Round2"></div>
       </div>
-      
+
       <div className="Slide Grid-width-wide">
         <hr></hr>
         <h2 className="Subheadline Text-color">Book I - Busy Market</h2>
@@ -26,29 +26,29 @@ function Creation() {
           pagination={{ clickable: true }}
           breakpoints={{
             320: {
-              slidesPerView: 1
+              slidesPerView: 1,
             },
             900: {
-              slidesPerView: 2
+              slidesPerView: 2,
             },
             /*1024: {
               slidesPerView: 3
             },*/
           }}
         >
-          {
-            visuals01.map((visual) => {
-              return(
-                <SwiperSlide key={visual.id}><img src={visual.img} alt={visual.img} /></SwiperSlide>
-              )
-            })
-          }
+          {visuals01.map((visual) => {
+            return (
+              <SwiperSlide key={visual.id}>
+                <img src={visual.img} alt={visual.img} />
+              </SwiperSlide>
+            );
+          })}
         </Swiper>
       </div>
       <div className="Slide Grid-width-wide">
         <hr></hr>
         <h2 className="Subheadline Text-color">Book II - Street Views</h2>
-           <Swiper
+        <Swiper
           spaceBetween={5}
           slidesPerView={3}
           modules={[Navigation, Pagination, Scrollbar]}
@@ -56,21 +56,21 @@ function Creation() {
           pagination={{ clickable: true }}
           breakpoints={{
             320: {
-              slidesPerView: 1
+              slidesPerView: 1,
             },
             900: {
-              slidesPerView: 2
+              slidesPerView: 2,
             },
           }}
         >
-          {
-            visuals02.map((visual) => {
-              return(
-                <SwiperSlide key={visual.id}><img src={visual.img} alt={visual.img} /></SwiperSlide>
-              )
-            })
-          }
-    </Swiper>
+          {visuals02.map((visual) => {
+            return (
+              <SwiperSlide key={visual.id}>
+                <img src={visual.img} alt={visual.img} />
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
       </div>
       {/*<div className="Slide Grid-width-wide">
         <hr></hr>
@@ -81,10 +81,10 @@ function Creation() {
           <InstagramEmbed url="https://www.instagram.com/reel/CpTIOt5jQ7M/" width={328} style={{marginTop: "2rem"}} />
         </div>
         </div> */}
-      
+
       <div className="Slide Grid-width-wide">
         <hr></hr>
-        <h2 className="Subheadline Text-color">More content coming soon</h2>
+        <h2 className="Subheadline Text-color">more content coming soon</h2>
       </div>
       {/*<div className="Slide Grid-width-wide">
         <hr></hr>
@@ -102,7 +102,6 @@ function Creation() {
         </div>
     </div>*/}
     </div>
-
   );
 }
 

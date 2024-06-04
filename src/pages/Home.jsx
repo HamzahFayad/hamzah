@@ -53,12 +53,12 @@ function Home() {
       </div>
       <hr></hr>
       <div className="Img-container Img-container-narrow Img-container-narrow-home">
-        <img src="/images/lofi.jpeg" alt="img" />
+        <img src="/images/mnt.jpeg" alt="img" />
         <div className="scroller">
           <span>
-            Web Development
+            Web & Software Dev
             <br />
-            Frontend - UX - Interaction
+            I/A - Generative Art
             <br />
             Photography
             <br />

@@ -7,6 +7,13 @@ export const private_projects = [
     topic: ["All Projects", "HTML/SCSS/JS", "JSON"],
   },
   {
+    id: "1.2",
+    title: "p5.js projects (Generative Art)",
+    img: "https://hamzahfayad.github.io/p5.js/images/mycity.png",
+    link: "https://hamzahfayad.github.io/p5.js/",
+    topic: ["All Projects", "p5.js"],
+  },
+  {
     id: "2",
     title: "Github Users",
     img: "https://hamzahfayad.github.io/portfolio/img/projects/devfinder.jpg",
@@ -27,20 +34,13 @@ export const private_projects = [
     link: "https://hamzahfayad.github.io/todo/",
     topic: ["All Projects", "Vue.js", "API"],
   },
-  {
-    id: "5",
-    title: "Periodic Table Infosite",
-    img: "/images/elements.png",
-    link: "https://chemical-elements.netlify.app/",
-    topic: ["All Projects", "React", "API"],
-  },
-  {
-    id: "6",
-    title: "p5.js projects",
-    img: "https://hamzahfayad.github.io/p5.js/images/mycity.png",
-    link: "https://hamzahfayad.github.io/p5.js/",
-    topic: ["All Projects", "p5.js"],
-  },
+  // {
+  //   id: "5",
+  //   title: "Periodic Table Infosite",
+  //   img: "/images/elements.png",
+  //   link: "https://chemical-elements.netlify.app/",
+  //   topic: ["All Projects", "React", "API"],
+  // },
   {
     id: "7",
     title: "musAic - shuffle sounds",

@@ -186,19 +186,19 @@ img{
   border-radius: 50%;
   width: 120px;
   height: 120px;
-  background-image: url("/public/images/profilepic.jpg");
+  background-image: url("/public/images/profile4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
   margin: 0 auto;
-  filter: grayscale(0.15);
+  /*filter: grayscale(0.15);*/
   border: 4px solid var(--main);
   transition: all 250ms ease-in-out;
   overflow: hidden;
 }
-.Round:hover{
+/* .Round:hover{
   filter: grayscale(0.2);
-}
+} */
 .Round2{
     filter: grayscale(0.35);
     background-image: url("/public/images/3d-background.jpg");

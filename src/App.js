@@ -42,6 +42,7 @@ function App() {
             <Navbar />
             <h2 className="Nav-name Monospace">
               I'm Hamzah, nice to meet you. 👨🏻‍💻
+              {/* <br/> You can also call me Mizo */}
             </h2>
             <div onClick={handleTheme} className="Dark-light Monospace">
               <span>

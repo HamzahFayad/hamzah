@@ -1,31 +1,31 @@
 export const about_data = [
-  {
-    date: "06/2026 xx",
-    color: "#9cba8f",
-    title:
-      "Filmmaking Short Course - catalyst (Institute for Creative Arts and Technology)",
-    description: "➢",
-  },
-  {
-    date: "summer 2025",
-    color:
-      "linear-gradient(to right, rgb(82, 155, 156) 50%, rgb(156, 186, 143) 100%)",
-    title: "Summer School - Seoul (South Korea) Hanyang University",
-    description: "➢ 4 weeks program /// ambassador scholarship",
-  },
-  {
-    date: "XX/2024 - today",
-    color: "#d27575",
-    title:
-      "freelance // selling photographs online - ArtHeroes // video editor",
-    description: "➢",
-  },
-  {
-    date: "09/2024 - xx",
-    color: "#d27575",
-    title: "Web Developer (React) - XXX Company",
-    description: "➢",
-  },
+  // {
+  //   date: "06/2026 xx",
+  //   color: "#9cba8f",
+  //   title:
+  //     "Filmmaking Short Course - catalyst (Institute for Creative Arts and Technology)",
+  //   description: "➢",
+  // },
+  // {
+  //   date: "summer 2025",
+  //   color:
+  //     "linear-gradient(to right, rgb(82, 155, 156) 50%, rgb(156, 186, 143) 100%)",
+  //   title: "Summer School - Seoul (South Korea) Hanyang University",
+  //   description: "➢ 4 weeks program /// ambassador scholarship",
+  // },
+  // {
+  //   date: "XX/2024 - today",
+  //   color: "#d27575",
+  //   title:
+  //     "freelance // selling photographs online - ArtHeroes // video editor",
+  //   description: "➢",
+  // },
+  // {
+  //   date: "09/2024 - xx",
+  //   color: "#d27575",
+  //   title: "Web Developer (React) - XXX Company",
+  //   description: "➢",
+  // },
   // {
   //   date: "10/2023 - 2025 xx",
   //   color: "#529b9c",
@@ -34,7 +34,7 @@ export const about_data = [
   //     "➢ Master of Science - 3 focus areas: informatics, media production, media studies /// web/app development, interactive visual worlds, visual stories (film, photography, animation)",
   // },
   {
-    date: "2022 - 2025",
+    date: "2023 - 2025",
     color: "#529b9c",
     title:
       "Medieninformatik M.Sc. / Media Informatics - Berliner Hochschule für Technik",
@@ -42,11 +42,11 @@ export const about_data = [
       "➢ Web & Software Development, Multimedia, Virtual Reality and more",
   },
   {
-    date: "09/2021 - XX/2024",
+    date: "09/2021 - today",
     color: "#d27575",
     title: "Web Developer - glow communication GmbH (Berlin)",
     description:
-      "➢ built interactive websites for various clients, websites maintenance, bug fixings and more / built a clients feedback tool incl. analytics for internal purposes",
+      "➢ built interactive websites for various clients, websites maintenance, bug fixings and more (clients incl. Prevent Waste Alliance, Inpacs, Polizei Berlin, NC-Group, Diakonie ...)",
   },
   {
     date: "03/2021 - 08/2021",

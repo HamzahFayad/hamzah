@@ -9,6 +9,12 @@ function About() {
         <div className="Round"></div>
       </div>
       <div className="Grid-width-wide Timeline">
+        <p style={{ textAlign: "center" }}>
+          <em>
+            "If I already have a vision, my work is almost done. The rest is a
+            technical problem." <br />- Hiroshi Sugimoto
+          </em>
+        </p>
         <hr></hr>
         <h2 className="Subheadline">life so far 👀</h2>
         <br />

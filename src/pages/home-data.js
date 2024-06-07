@@ -9,7 +9,7 @@ export const private_projects = [
   {
     id: "1.2",
     title: "p5.js projects (Generative Art)",
-    img: "https://hamzahfayad.github.io/p5.js/images/mycity.png",
+    img: "https://hamzahfayad.github.io/p5.js/images/firework.png",
     link: "https://hamzahfayad.github.io/p5.js/",
     topic: ["All Projects", "p5.js"],
   },
@@ -19,6 +19,13 @@ export const private_projects = [
     img: "https://hamzahfayad.github.io/portfolio/img/projects/devfinder.jpg",
     link: "https://hamzahfayad.github.io/devfinder/",
     topic: ["All Projects", "Vue.js", "API"],
+  },
+  {
+    id: "2.1",
+    title: "retro-style Song Box v1.2 (in progress)",
+    img: "https://raw.githubusercontent.com/HamzahFayad/songbox/main/public/assets/screenshotv1.png",
+    link: "https://song-box.netlify.app/",
+    topic: ["All Projects", "React"],
   },
   {
     id: "3",

@@ -58,7 +58,7 @@ function Home() {
           <span>
             Web & Software Dev
             <br />
-            I/A - Generative Art
+            Generative Art
             <br />
             Photography
             <br />

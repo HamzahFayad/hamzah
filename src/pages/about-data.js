@@ -34,6 +34,14 @@ export const about_data = [
   //     "➢ Master of Science - 3 focus areas: informatics, media production, media studies /// web/app development, interactive visual worlds, visual stories (film, photography, animation)",
   // },
   {
+    date: "Kaggle",
+    color: "#9cba8f",
+    title:
+      "Kaggle Learn Certifications",
+    description:
+      "➢ learn Machine Learning / Data Science (Pandas, Data Visualization, Matplotlib, Seaborn)",
+  },
+  {
     date: "Master's degree",
     color: "#529b9c",
     title:

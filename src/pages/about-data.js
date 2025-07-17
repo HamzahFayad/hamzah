@@ -34,7 +34,7 @@ export const about_data = [
   //     "➢ Master of Science - 3 focus areas: informatics, media production, media studies /// web/app development, interactive visual worlds, visual stories (film, photography, animation)",
   // },
   {
-    date: "2023 - 2025",
+    date: "Master's degree",
     color: "#529b9c",
     title:
       "Medieninformatik M.Sc. / Media Informatics - Berliner Hochschule für Technik",
@@ -42,28 +42,28 @@ export const about_data = [
       "➢ Web & Software Development, Generative Art, Multimedia, Virtual Reality and more",
   },
   {
-    date: "09/2021 - today",
+    date: "Web Developer",
     color: "#d27575",
     title: "Web Developer - glow communication GmbH (Berlin)",
     description:
       "➢ built interactive websites for various clients, websites maintenance, bug fixings and more (clients incl. Prevent Waste Alliance, Inpacs, Polizei Berlin, NC-Group, Diakonie ...)",
   },
   {
-    date: "03/2021 - 08/2021",
+    date: "Photography",
     color: "#9cba8f",
     title: "Photography Certificate - OfG (Online Schule für Gestaltung)",
     description:
       "➢ work with light / product photography / colors and black & white / from street to macro photography / visual storytelling",
   },
   {
-    date: "09/2020 - 12/2020",
+    date: "Internship",
     color: "#d27575",
     title: "Internship Web Developer - Deutsche Presse-Agentur (Berlin)",
     description:
       "➢ developed HTML/JS templates for Wordpress addons: imagewall, quiz, timeline, referendum, covid barchart race with d3.js",
   },
   {
-    date: "2018 - 2021",
+    date: "Bachelor's degree",
     color: "#529b9c",
     title:
       "Medieninformatik B.Sc. / Media Informatics - Berliner Hochschule für Technik",
@@ -71,7 +71,7 @@ export const about_data = [
       "➢ Bachelor of Science - focus on computer science fundamentals & programming / software & web development / interaction & user experience",
   },
   {
-    date: "2017",
+    date: "High School",
     color: "#529b9c",
     title: "Abitur / High School Graduation",
     description: "",

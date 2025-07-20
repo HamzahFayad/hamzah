@@ -29,17 +29,17 @@ export const private_projects = [
   },
   {
     id: "4",
-    title: "Weather App",
-    img: "https://hamzahfayad.github.io/portfolio/img/projects/weather-app.png",
-    link: "https://hamzahfayad.github.io/weather-app/",
-    topic: ["All Projects", "Vue.js", "API"],
-  },
-  {
-    id: "5",
     title: "Night Drift - Game",
     img: "/images/NightDrive.gif",
     link: "https://mizo99.itch.io/night-drift",
     topic: ["All Projects", "p5.js"],
+  },
+  {
+    id: "5",
+    title: "Weather App",
+    img: "https://hamzahfayad.github.io/portfolio/img/projects/weather-app.png",
+    link: "https://hamzahfayad.github.io/weather-app/",
+    topic: ["All Projects", "Vue.js", "API"],
   },
   {
     id: "6",

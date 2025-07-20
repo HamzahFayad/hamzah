@@ -50,6 +50,13 @@ export const private_projects = [
     topic: ["All Projects", "Vue.js", "API"],
   },
   {
+    id: "6.2",
+    title: "Fish and Prey",
+    img: "/images/fish.png",
+    link: "https://hamzahfayad.github.io/p5.js/p5_fish/",
+    topic: ["All Projects", "p5.js"],
+  },
+  {
     id: "7",
     title: "Todo",
     img: "https://hamzahfayad.github.io/portfolio/img/projects/todo.png",

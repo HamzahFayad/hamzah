@@ -34,15 +34,23 @@ export const private_projects = [
     link: "https://mizo99.itch.io/night-drift",
     topic: ["All Projects", "p5.js"],
   },
+
   {
     id: "5",
+    title: "Endless Train Ride",
+    img: "/images/train.png",
+    link: "https://hamzahfayad.github.io/p5.js/p5_selfportrait/",
+    topic: ["All Projects", "p5.js"],
+  },
+  {
+    id: "6",
     title: "Weather App",
     img: "https://hamzahfayad.github.io/portfolio/img/projects/weather-app.png",
     link: "https://hamzahfayad.github.io/weather-app/",
     topic: ["All Projects", "Vue.js", "API"],
   },
   {
-    id: "6",
+    id: "7",
     title: "Todo",
     img: "https://hamzahfayad.github.io/portfolio/img/projects/todo.png",
     link: "https://hamzahfayad.github.io/todo/",
@@ -56,14 +64,14 @@ export const private_projects = [
   //   topic: ["All Projects", "React", "API"],
   // },
   {
-    id: "7",
+    id: "8",
     title: "musAic - shuffle sounds",
     img: "/images/musaic.png",
     link: "https://musaic-shuffle.netlify.app/",
     topic: ["All Projects", "React"],
   },
   {
-    id: "8",
+    id: "9",
     title: "Studio Ghibli",
     img: "https://hamzahfayad.github.io/portfolio/img/projects/studioghibli.JPG",
     link: "https://hamzahfayad.github.io/studioghibli/",
@@ -77,14 +85,14 @@ export const private_projects = [
   //   topic: ["All Projects", "Wordpress"],
   // },
   {
-    id: "9",
+    id: "10",
     title: "glow communication homepage",
     img: "/images/glow.png",
     link: "https://glow-berlin.de/",
     topic: ["All Projects", "Wordpress"],
   },
   {
-    id: "10",
+    id: "11",
     title: "Social Media Dashboard",
     img: "https://hamzahfayad.github.io/portfolio/img/projects/social-media-dashboard.jpg",
     link: "https://hamzahfayad.github.io/social-media-dashboard/",

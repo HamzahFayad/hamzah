@@ -8,6 +8,7 @@ function Filter({ onClick }) {
     "HTML/SCSS/JS",
     "React",
     "p5.js",
+    "Machine Learning / Data",
     "Vue.js",
     "API",
     "JSON",

@@ -43,6 +43,13 @@ export const private_projects = [
     topic: ["All Projects", "p5.js"],
   },
   {
+    id: "6.0",
+    title: "Netflix Data Exploration",
+    img: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+    link: "https://github.com/HamzahFayad/netflix-insights",
+    topic: ["All Projects", "Machine Learning / Data"],
+  },
+  {
     id: "6",
     title: "Weather App",
     img: "https://hamzahfayad.github.io/portfolio/img/projects/weather-app.png",

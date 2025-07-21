@@ -58,11 +58,11 @@ function Home() {
           <span>
             Web & Software Dev
             <br />
+            ML / Data
+            <br />
             Generative Art
             <br />
-            Photography
-            <br />
-            Cinematic Film
+            Visual Stories
           </span>
         </div>
       </div>

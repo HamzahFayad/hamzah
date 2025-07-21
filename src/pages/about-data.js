@@ -34,6 +34,14 @@ export const about_data = [
   //     "➢ Master of Science - 3 focus areas: informatics, media production, media studies /// web/app development, interactive visual worlds, visual stories (film, photography, animation)",
   // },
   {
+    date: "coursera",
+    color: "#9cba8f",
+    title:
+      "Coursera Machine Learning",
+    description:
+      "➢ learn Machine Learning Concepts (Supervised ML, Advanced Algorithms)",
+  },
+  {
     date: "Kaggle",
     color: "#9cba8f",
     title:
@@ -47,7 +55,7 @@ export const about_data = [
     title:
       "Medieninformatik M.Sc. / Media Informatics - Berliner Hochschule für Technik",
     description:
-      "➢ Web & Software Development, Generative Art, Multimedia, Virtual Reality and more",
+      "➢ Web & Software Development, Generative Art, Data Science, HCI and more",
   },
   {
     date: "Web Developer",

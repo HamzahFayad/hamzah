@@ -37,7 +37,7 @@ export const about_data = [
     date: "coursera",
     color: "#9cba8f",
     title:
-      "Coursera Machine Learning",
+      "Coursera Machine Learning by Andrew Ng",
     description:
       "➢ learn Machine Learning Concepts (Supervised ML, Advanced Algorithms)",
   },

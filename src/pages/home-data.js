@@ -50,6 +50,13 @@ export const private_projects = [
     topic: ["All Projects", "Machine Learning / Data"],
   },
   {
+    id: "6.1",
+    title: "Sales Data Analysis",
+    img: "https://raw.githubusercontent.com/HamzahFayad/sales-analysis/main/SalesAnalysis/plots/output1.png",
+    link: "https://github.com/HamzahFayad/sales-analysis",
+    topic: ["All Projects", "Machine Learning / Data"],
+  },
+  {
     id: "6",
     title: "Weather App",
     img: "https://hamzahfayad.github.io/portfolio/img/projects/weather-app.png",

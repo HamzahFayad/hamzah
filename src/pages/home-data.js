@@ -44,9 +44,9 @@ export const private_projects = [
   },
   {
     id: "6.0",
-    title: "Netflix Data Exploration",
+    title: "Global CoffeeStats (ongoing)",
     img: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
-    link: "https://github.com/HamzahFayad/netflix-insights",
+    link: "https://github.com/HamzahFayad/coffee-analysis",
     topic: ["All Projects", "Machine Learning / Data"],
   },
   {
@@ -54,6 +54,13 @@ export const private_projects = [
     title: "Sales Data Analysis",
     img: "https://raw.githubusercontent.com/HamzahFayad/sales-analysis/main/SalesAnalysis/plots/output1.png",
     link: "https://github.com/HamzahFayad/sales-analysis",
+    topic: ["All Projects", "Machine Learning / Data"],
+  },
+  {
+    id: "6.2",
+    title: "Netflix Data Exploration",
+    img: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
+    link: "https://github.com/HamzahFayad/netflix-insights",
     topic: ["All Projects", "Machine Learning / Data"],
   },
   {

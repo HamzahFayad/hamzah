@@ -34,6 +34,14 @@ export const about_data = [
   //     "➢ Master of Science - 3 focus areas: informatics, media production, media studies /// web/app development, interactive visual worlds, visual stories (film, photography, animation)",
   // },
   {
+    date: "Film",
+    color: "#e2944f",
+    title:
+      "Extra on a Film Set",
+    description:
+      "➢ Role: Capitol citizen in 'The Hunger Games: Sunrise on the Reaping (2026)'",
+  },
+  {
     date: "coursera",
     color: "#9cba8f",
     title:

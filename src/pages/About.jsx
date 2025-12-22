@@ -27,6 +27,12 @@ function About() {
           <br />
           <span
             className="legend"
+            style={{ backgroundColor: "#e2944f" }}
+          ></span>
+          freelance
+          <br />
+          <span
+            className="legend"
             style={{ backgroundColor: "#9cba8f" }}
           ></span>
           certification / courses

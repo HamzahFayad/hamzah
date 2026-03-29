@@ -53,7 +53,7 @@ function About() {
               <h3>{data.date}</h3>
               <div>
                 <h4 style={{ background: data.color }}>{data.title}</h4>
-                <p>{data.description}</p>
+                <p style={{ whiteSpace: "pre-line" }}>{data.description}</p>
               </div>
             </div>
           );

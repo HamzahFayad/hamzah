@@ -39,7 +39,7 @@ export const about_data = [
     title:
       "Extra on a Film Set",
     description:
-      "➢ Role: Capitol citizen in 'The Hunger Games: Sunrise on the Reaping (2026)'",
+      "➢ Role: Capitol citizen in 'The Hunger Games: Sunrise on the Reaping (2026)' \n➢ Role: Astoria Customer in Apple TV Series 'Wild Things'",
   },
   {
     date: "coursera",
@@ -55,7 +55,7 @@ export const about_data = [
     title:
       "Kaggle Learn Certifications",
     description:
-      "➢ learn Machine Learning / Data Science (Pandas, Data Visualization, Matplotlib, Seaborn)",
+      "➢ Machine Learning / Data Science (Pandas, Data Visualization, Matplotlib, Seaborn)",
   },
   {
     date: "Master's degree",
@@ -70,7 +70,7 @@ export const about_data = [
     color: "#d27575",
     title: "Web Developer - glow communication GmbH (Berlin)",
     description:
-      "➢ built interactive websites for various clients, websites maintenance, bug fixings and more (clients incl. Prevent Waste Alliance, Inpacs, Polizei Berlin, NC-Group, Diakonie ...)",
+      "➢ Sub-Team Lead: Team's technical advisor and sounding board for complex project challenges\n➢ built interactive websites for various clients, websites maintenance, bug fixings and more (clients incl. Prevent Waste Alliance, Inpacs, Polizei Berlin, NC-Group, Diakonie ...)",
   },
   {
     date: "Photography",

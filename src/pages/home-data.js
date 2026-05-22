@@ -57,7 +57,7 @@ export const private_projects = [
   },
   {
     id: "8",
-    title: "Global CoffeeStats (ongoing)",
+    title: "Global CoffeeStats",
     img: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     link: "https://github.com/HamzahFayad/coffee-analysis",
     topic: ["All Projects", "Machine Learning / Data"],

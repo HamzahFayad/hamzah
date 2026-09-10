@@ -30,7 +30,7 @@ export const private_projects = [
   {
     id: "4",
     title: "retro-style Song Box v1.2 (in progress)",
-    img: "https://raw.githubusercontent.com/HamzahFayad/songbox/main/public/assets/screenshotv1.png",
+    img: "https://developers.elementor.com/docs/assets/img/elementor-placeholder-image.png",
     link: "https://song-box.netlify.app/",
     topic: ["All Projects", "React"],
   },

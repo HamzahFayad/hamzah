@@ -63,7 +63,7 @@ export const about_data = [
     title:
       "Medieninformatik M.Sc. / Media Informatics - Berliner Hochschule für Technik",
     description:
-      "➢ Web & Software Development, Generative Art, Data Science, HCI and more",
+      "➢ Web & Software Development, Generative Art, Data Science, HCI and more\n➢ Master thesis: 'Use of machine learning to predict child mortality rates and identify relevant influencing indicators: A simulation-based country-level analysis.'",
   },
   {
     date: "Web Developer",

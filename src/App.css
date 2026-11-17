@@ -434,6 +434,12 @@ svg, .icon{
     width: 100%;
   }
 }
+
+.Projects-wrap .Project-item.full-height img{
+  height: auto;
+  min-width: 100%;
+}
+
 .Projects-wrap .project-title {
   margin-top: .5rem;
 }

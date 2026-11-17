@@ -99,7 +99,7 @@ function Home() {
                     rel="noreferrer"
                     href={data.link}
                   >
-                    <div key={data.id} className="Project-item">
+                    <div key={data.id} className={"Project-item " + (data.fullSize ? data.fullSize : "")}>
                       <img src={data.img} alt={"project-image-" + data.id} />
                       <p className="project-title">
                         {data.title}{" "}

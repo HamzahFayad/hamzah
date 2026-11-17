@@ -118,4 +118,25 @@ export const private_projects = [
     link: "https://hamzahfayad.github.io/social-media-dashboard/",
     topic: ["All Projects", "HTML/SCSS/JS"],
   },
+  {
+    id: "17",
+    title: "The Hunt - Game Poster",
+    img: "/images/the_hunt.png",
+    topic: ["All Projects", "Design"],
+    fullSize: "full-height"
+  },
+  {
+    id: "18",
+    title: "Night Drive - Retro Game Poster",
+    img: "/images/night_drive.png",
+    topic: ["All Projects", "Design"],
+    fullSize: "full-height"
+  },
+  {
+    id: "19",
+    title: "wavve - App Poster",
+    img: "/images/wavve.png",
+    topic: ["All Projects", "Design"],
+    fullSize: "full-height"
+  }
 ];

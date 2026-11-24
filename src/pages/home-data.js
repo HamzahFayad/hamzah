@@ -4,7 +4,7 @@ export const private_projects = [
     title: "The Planets",
     img: "https://hamzahfayad.github.io/portfolio/img/projects/planets.png",
     link: "https://hamzahfayad.github.io/planets-facts/",
-    topic: ["All Projects", "HTML/SCSS/JS", "JSON"],
+    topic: ["All Projects", "HTML/SCSS/JS"],
   },
   {
     id: "1",

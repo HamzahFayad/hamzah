@@ -11,7 +11,6 @@ function Filter({ onClick }) {
     "Machine Learning / Data",
     "Vue.js",
     "API",
-    "JSON",
     "Design",
   ];
   //const [filtername, setFiltername] = useState(filter);

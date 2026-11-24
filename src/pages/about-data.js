@@ -39,7 +39,7 @@ export const about_data = [
     title:
       "Extra on a Film Set",
     description:
-      "➢ Role: Capitol citizen in 'The Hunger Games: Sunrise on the Reaping (2026)' \n➢ Role: Astoria Customer in Apple TV Series 'Wild Things'",
+      "➢ Role: Capitol citizen in 'The Hunger Games: Sunrise on the Reaping (2026)' \n➢ Role: Astoria Customer (1960s) in Apple TV Series 'Wild Things'",
   },
   {
     date: "coursera",

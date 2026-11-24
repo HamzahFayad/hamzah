@@ -139,6 +139,13 @@ button:hover{
   font-weight: var(--bold);
   line-height: 1.5;
 }
+.Subheadline2{
+  color: var(--dark_main);
+  font-weight: var(--bold);
+  line-height: 1.5;
+  margin-top: .5rem;
+}
+
 .Monospace {
   font-family: "monospace";
 }
@@ -213,7 +220,7 @@ html, body, .App {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
+  overflow-x: clip; /*hidden*/
   min-height: 100vh;
   font-family: "Raleway";
   position: relative;
@@ -473,6 +480,44 @@ div.active-filter{
 }
 div.active-filter > p{
   color: var(--light);
+}
+code{
+  font-size: 1rem;
+  color: var(--dark_main);
+}
+
+.ux_section{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 2rem;
+  align-items: start;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--main);
+}
+.left_ux {
+  position: sticky;
+  top: 5rem; 
+  align-self: start;
+}
+@media screen and (max-width: 864px) {
+  .left_ux {
+    position: relative;
+  }
+}
+.right_ux img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+@media screen and (min-width: 865px) {
+  .right_ux img {
+    margin-left: .5rem;
+    margin-top: 0;
+    width: 130%;
+
+  }
 }
 
 /*.koala{

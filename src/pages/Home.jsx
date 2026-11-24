@@ -1,5 +1,6 @@
 import "../App.css";
 import { private_projects } from "./home-data";
+import { ux_projects } from "./ux-data";
 import Filter from "../interactions/Filter";
 import { useEffect, useState } from "react";
 import { Outlet } from "react-router-dom";
@@ -20,6 +21,8 @@ function Home() {
 
   let projectsFilter = private_projects.filter((f) => f.topic.includes(filter));
   let num = projectsFilter.length;
+
+  let uxProjects = ux_projects;
 
   useEffect(() => {
     setIsLoaded(false);
@@ -75,7 +78,7 @@ function Home() {
         </div>
         <div className="Projects top-space bottom-space">
           <h2 data-aos="zoom-in" className="Subheadline Text-color">
-            Projects 🖥️
+            Projects 🖥️ <code>{"//DEV • Creative Coding"}</code>
           </h2>
           <Filter onClick={handleFilter} />
           <div
@@ -99,7 +102,12 @@ function Home() {
                     rel="noreferrer"
                     href={data.link}
                   >
-                    <div key={data.id} className={"Project-item " + (data.fullSize ? data.fullSize : "")}>
+                    <div
+                      key={data.id}
+                      className={
+                        "Project-item " + (data.fullSize ? data.fullSize : "")
+                      }
+                    >
                       <img src={data.img} alt={"project-image-" + data.id} />
                       <p className="project-title">
                         {data.title}{" "}
@@ -114,6 +122,38 @@ function Home() {
           {next < projectsFilter?.length && (
             <button onClick={handleMoreProjects}>SHOW MORE</button>
           )}
+        </div>
+
+        <div className="Projects top-space bottom-space">
+          <h2 data-aos="zoom-in" className="Subheadline Text-color">
+            Case Studies📱 <code>{"// UX • UI Design"}</code>
+          </h2>
+          <br />
+          {uxProjects.map((data, index) => {
+            return (
+              <div className="ux_section" key={data.id ?? index}>
+                <div className="left_ux">
+                  <h2 className="Text-color">
+                    <em>{data.title}</em>
+                  </h2>
+                  <code>{data.subtitle}</code>
+                  <br />
+                  <br />
+                  <h3 className="Subheadline2">Concept</h3>
+                  <p>{data.concept}</p>
+                  <h3 className="Subheadline2">Unique Selling Points</h3>
+                  <p style={{ whiteSpace: "pre-line" }}>{data.reasons}</p>
+                  <h3 className="Subheadline2">Challenges</h3>
+                  <p style={{ whiteSpace: "pre-line" }}>{data.challenges}</p>
+                </div>
+                <div className="right_ux">
+                  {data.images.map((img, i) => (
+                    <img key={i} alt={img.title} src={img} />
+                  ))}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
 

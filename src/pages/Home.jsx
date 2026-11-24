@@ -78,7 +78,7 @@ function Home() {
         </div>
         <div className="Projects top-space bottom-space">
           <h2 data-aos="zoom-in" className="Subheadline Text-color">
-            Projects 🖥️ <code>{"//DEV • Creative Coding"}</code>
+            Projects 🖥️ <code>{"// DEV • Creative Coding"}</code>
           </h2>
           <Filter onClick={handleFilter} />
           <div

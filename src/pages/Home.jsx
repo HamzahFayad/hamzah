@@ -134,7 +134,7 @@ function Home() {
               <div className="ux_section" key={data.id ?? index}>
                 <div className="left_ux">
                   <h2 className="Text-color">
-                    <em>{data.title}</em>
+                    {data.title}
                   </h2>
                   <code>{data.subtitle}</code>
                   <br />
@@ -143,8 +143,9 @@ function Home() {
                   <p>{data.concept}</p>
                   <h3 className="Subheadline2">Unique Selling Points</h3>
                   <p style={{ whiteSpace: "pre-line" }}>{data.reasons}</p>
-                  <h3 className="Subheadline2">Challenges</h3>
+                  <h3 className="Subheadline2">Key Focus</h3>
                   <p style={{ whiteSpace: "pre-line" }}>{data.challenges}</p>
+                  {data.link && (<a rel="noreferrer" target="_blank" href={data.link} className="left_ux_link">→ Visit</a>)}
                 </div>
                 <div className="right_ux">
                   {data.images.map((img, i) => (
